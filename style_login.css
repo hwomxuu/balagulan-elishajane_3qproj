@@ -1,0 +1,300 @@
+/* sets margin and padding for every element to 0 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* adds 20px padding for every h1 element */
+h1 {
+  padding: 20px;
+}
+
+/* adds padding, changes font size and sets text alignment to justified for every p element */
+p {
+ padding: 10px 20px;
+ text-align: justify;
+ font-size: 16px;
+}
+
+/* changes font size of every b element */
+b {
+  font-size: 16px;
+}
+
+span {
+  float: right;
+  padding: 16px;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+/* navigation bar styles - sticky and dark green background */
+nav {
+  background-color: darkgreen;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+/* nav bar buttons styles */
+nav a {
+  float: left;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* nav bar buttons link status styles */
+nav a:link {
+  background-color: darkgreen;
+  color: white;
+}
+
+/* nav bar buttons visited status styles */
+nav a:visited {
+  color: #adf7bc;
+}
+
+/* nav bar buttons hover status styles */
+nav a:hover {
+  background-color: white;
+  color: darkgreen;
+}
+
+/* nav bar logo visited status styles */
+nav a.logo-link:hover {
+  background-color: transparent;
+  opacity: 0.85;
+}
+
+/* nav bar buttons active status styles */
+nav a:active, nav a.active {
+  background-color: #cdcdcd;
+  color: black;
+}
+
+/* adjusts placement and size of logo */
+nav img {
+  padding: 0px 10px;
+  height: 70px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+}
+
+/* sets up margin and padding of logo to 0 */
+nav a.logo-link { 
+  margin:0; 
+  padding:0; 
+}
+
+/* moves nav bar from left to right */
+ul.navsec { 
+  text-align:right; 
+}
+
+/* sets up nav bar design and placement */
+nav li {
+  overflow: hidden;
+  list-style: none;
+  text-align: justify;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section{
+  font-family: 'Fira Sans', serif;
+  float: left;
+  padding: 0px 25px;
+  width: 55%;
+}
+
+/* input element styles */
+input[type=text], input[type=password] {
+  width: 80%;
+  height: 32px;
+  margin: 2px 10px;
+  border-radius: 5px;
+  border: solid;
+  border-color: darkgreen;
+  border-width: 2px;
+  font-size: 16px;
+  font-family: 'Fira Sans', serif;
+  text-align: left;
+  display: inline-block;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  background-color: #c9c9c9;
+}
+
+/* input element styles when focused */
+input[type=text]:focus, input[type=password]:focus{
+  background-color: white;
+  border:2px solid black;
+  outline:none;
+}
+
+/* button element styles */
+button {
+  font-size: 16px;
+  width: 40px;
+  height: auto;
+  text-align: center;
+  padding: 2.5px;
+  border-radius: 5px;
+  border: solid;
+  border-color: darkgreen;
+  border-width: 2px;
+  margin: 10px 10.5px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  position: relative;
+  display: inline;
+  width: 100px;
+  font-family: 'Fira Sans', serif;
+}
+
+button:after {
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+/* button element styles when hovered on */
+button:hover {
+  background-color: rgb(11, 129, 11);
+  color: white;
+  border-color: darkgreen;
+}
+
+form {
+  padding: 20px;
+  margin: auto;
+}
+
+/* sets div color to dark green and adjusts its size and placement */
+#login{
+  background-color: darkgreen;
+  border-radius: 25px;
+  width: 450px;
+  height: 480px;
+  margin: 20px 45px 20px 0;
+  float: right;
+}
+
+/* sets div color to white and adjusts its size and placement */
+#login-header{
+  background-color: white;
+  border-radius: 25px;
+  height: 430px;
+  width: 450px;
+  margin: 25px auto;
+}
+
+/* sets background image */
+#loginWrapper { 
+  overflow:hidden; 
+  background-image: url(Li_Balagulan_2qProj/images/bg-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* adds 10px top and bottom padding and margin and aligns div to center */
+#output {
+  padding: 10px 0px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+/* sets an element to color red */
+.red {
+  color:#ff0000; 
+}
+
+.field-group label { 
+  display: block; 
+}
+
+.field-group span.red {
+  padding: 0;
+  vertical-align: middle;
+  display: inline-block;
+  float: none;
+} 
+
+.container {
+  font-family: 'Fira Sans', serif;
+  padding: 30px;
+}
+
+#container{
+  display: block;
+}
+  
+  /* sets footer background color to dark green and adds padding */
+footer {
+  background-color: darkgreen;
+  padding: 20px;
+}
+
+/* changes footer text font, color and size */
+footer p {
+  font-family: 'Fira Sans', serif;
+  color: white;
+  font-size: 12px;
+}
+
+/* copyright claim text size and placement adjustments */
+.sub-footer {
+  padding: 0px 150px;
+  text-align: center; 
+  color:#FFFFFF; 
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* sets first social media icon */
+#sprites1 {
+  background: url(Li_Balagulan_2qProj/images/sm-icons1.png) 0px 0px/160px auto; 
+  width: 55px;
+  height: 55px;
+}
+
+/* sets second social media icon */
+#sprites2 {
+  background: url(Li_Balagulan_2qProj/images/sm-icons1.png) -52px -55px/160px auto; 
+  width: 55px;
+  height: 55px;
+}
+
+/* sets third social media icon */
+#sprites3 {
+  background: url(Li_Balagulan_2qProj/images/sm-icons1.png) -104px -55px/160px auto; 
+  width: 55px;
+  height: 55px;
+}
+
+/* changes first social media icon brightness when hovered on */
+#sprites1:hover {
+  filter: brightness(75%);
+}
+
+/* changes second social media icon brightness when hovered on */
+#sprites2:hover {
+  filter: brightness(75%);
+}
+
+/* changes third social media icon brightness when hovered on */
+#sprites3:hover {
+  filter: brightness(75%);
+}

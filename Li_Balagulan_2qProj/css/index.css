@@ -1,0 +1,415 @@
+/* sets margin and padding for every element to 0 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* sets up image in header */
+header {
+  background-image: url(../images/header1.jpg);
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* sets up header text and design */
+header h1 {
+  padding: 75px 0px;
+  font-family: 'Poppins', serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px 10px black, -1px -1px 10px black, 1px -1px 2px black, -1px 1px 2px black;
+  position: relative;
+}
+
+/* navigation bar styles - sticky and dark green background */
+nav {
+  background-color: darkgreen;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+/* nav bar buttons styles */
+nav a {
+  float: left;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* nav bar buttons link status styles */
+nav a:link {
+  background-color: darkgreen;
+  color: white;
+}
+
+/* nav bar buttons visited status styles */
+nav a:visited {
+  color: #adf7bc;
+}
+
+/* nav bar buttons hover status styles */
+nav a:hover {
+  background-color: white;
+  color: darkgreen;
+}
+
+/* nav bar logo visited status styles */
+nav a.logo-link:hover {
+  background-color: transparent;
+  opacity: 0.85;
+}
+
+/* nav bar buttons active status styles */
+nav a:active, nav a.active {
+  background-color: #cdcdcd;
+  color: black;
+}
+
+/* adjusts placement and size of logo */
+nav img {
+  padding: 0px 10px;
+  height: 70px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+}
+
+/* sets up margin and padding of logo to 0 */
+nav a.logo-link { 
+  margin:0; 
+  padding:0; 
+}
+
+/* moves nav bar from left to right */
+ul.navsec { 
+  text-align:right; 
+}
+
+/* sets up nav bar design and placement */
+nav li {
+  overflow: hidden;
+  list-style: none;
+  text-align: justify;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* changes font */
+article {
+  font-family: 'Fira Sans', serif;
+}
+
+/* sets up call-to-action */
+.call-to-action {
+  border: 3px solid #006400;
+  border-radius: 10px;
+  padding: 30px 30px 15px 30px;
+  width: 50%;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+
+/* adds padding and margin for h2 */
+article h2 {
+  padding: 0px 20px ;
+  margin: 10px 0px;
+}
+
+/* adds padding and margin for h3 */
+article h3 {
+  padding: 0px 30px;
+  margin: 10px 0px;
+}
+
+/* adds left and right in article paragraphs */
+article p {
+  padding: 0px 45px;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 16px
+}
+
+/* adjusts image */
+article #p1 {
+  margin: 10px 0 0 10px;
+  height: 275px;
+  width: auto;
+  float: right;
+}
+
+/* adjusts image */
+article #p2 {
+  margin: 10px;
+  height: 275px;
+  width: auto;
+  float: left;
+}
+
+/* adjusts image */
+article #p3 {
+  margin: 10px 0 0 10px;
+  height:300px;
+  width: auto;
+  float: right;
+}
+
+/* adjusts image */
+article #p4 {
+  height: 300px;
+  width: auto;
+  float: left;
+  margin-right:10px;
+}
+
+/* adds bottom padding on paragraph */
+.par1 {
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+.par2{
+  font-size: 16px;
+}
+
+/* adds padding and margin and adjusts line height */
+.reference-list li {
+  padding: 0px 40px 0px 0px;
+  margin-left:  40px;
+  line-height:  1.5em;
+  font-size: 16px;
+}
+
+/* adds 30px top and bottom padding and font */
+.references {
+  padding: 30px 0px;
+  font-family: 'Fira Sans', serif;
+}
+
+/* adds 10px top padding */
+.references, .contacts h3 {
+  padding-top: 10px;
+}
+
+/* adds left margin and padding */
+.reference-list {
+  margin-left:25px;
+  padding-left: 10px;
+}
+
+/* adds top and left padding */
+.reference-list, .contact-list { 
+  padding: 10px 0px 0px 60px;
+}
+
+/* set padding to 0 on reference and contact list but set bottom padding to 5 px */ 
+.reference-list, .contact-list li {  
+  padding: 0px 0px 5px 0px;
+}
+
+/* adds 15px bottom padding of h2 */
+.contacts h2 {
+  padding-bottom: 15px;
+}
+
+/* removes bullet icon */
+.contact-list li {
+  list-style: none;
+}
+
+/* button design and transition */
+.application #button1, #button2 {
+  border: none;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 0px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 15px;
+  margin: 20px;
+  font-weight:bold;
+  font-family: 'Poppins', serif;
+  text-decoration: none;
+  transition: transform .7s; 
+}
+
+/* set default bg color and color of button */
+.application #button1:link {
+   background-color: darkgreen;
+   color:white;
+}
+
+/* button visited status styles */
+.application #button1:visited {
+   background-color: darkgreen;
+   color:#adf7bc;
+}
+
+/* button scale effect when hovered on */
+.application #button1:hover {
+   transform: scale(1.2); 
+}
+
+/* button active status styles */
+.application #button1:active {
+   background-color: #cdcdcd;
+   color:#000000;
+}
+
+/* centers the donate button*/
+.application {
+  text-align: center;
+}
+
+/* adds 25px top and bottom and 5px left and right margin per social icon */
+.social-icon {
+  margin: 25px 5px;
+  display: inline-block;
+}
+
+/* remove left margin on fb icon */
+.socmed .social-icon:first-child {
+  margin-left:0; 
+}
+
+/* align social icons to right */
+.socmed { 
+  float: right;
+}
+
+/* sets footer background color to dark green and adds padding */
+footer {
+  background-color: darkgreen;
+  padding: 20px;
+}
+
+/* changes footer text font, color and size */
+footer p {
+  font-family: 'Fira Sans', serif;
+  color: white;
+  font-size: 12px;
+}
+
+/* copyright claim text size and placement adjustments */
+.sub-footer {
+  padding: 0px 150px;
+  text-align: center; 
+  color:#FFFFFF; 
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* sets first social media icon */
+#sprites1 {
+  background: url(../images/sm-icons1.png) 0px 0px/160px auto; 
+  width: 55px;
+  height: 55px;
+}
+
+/* sets second social media icon */
+#sprites2 {
+  background: url(../images/sm-icons1.png) -52px -55px/160px auto; 
+  width: 55px;
+  height: 55px;
+}
+
+/* sets third social media icon */
+#sprites3 {
+  background: url(../images/sm-icons1.png) -104px -55px/160px auto; 
+  width: 55px;
+  height: 55px;
+}
+
+/* changes first social media icon brightness when hovered on */
+#sprites1:hover {
+  filter: brightness(75%);
+}
+
+/* changes second social media icon brightness when hovered on */
+#sprites2:hover {
+  filter: brightness(75%);
+}
+
+/* changes third social media icon brightness when hovered on */
+#sprites3:hover {
+  filter: brightness(75%);
+}
+
+/* adds 10px top and bottom and 50 px left and right padding on form */
+form {
+  padding: 10px 50px;
+  overflow: hidden;
+}
+
+/* changes font size of all label elements to 18px */
+label {
+  font-size: 16px;
+}
+
+/* adjust placement, size, font, and design of text area and prevents it from resizing */
+input[type=text] {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: 'Fira Sans', serif;
+  font-size: 16px;
+  padding: 0px 5px;
+}
+
+/* adjust placement, size, font, and design of input area */
+textarea {
+  font-family: 'Fira Sans', serif; 
+  width: 100%;
+  height: 100px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid black;
+  padding:  5px 5px;
+  font-size:  16px;
+  margin-top:   10px;
+  resize: none;
+}
+
+/* adjust placement, size, font, and design of submit button */
+input[type=submit] {
+  float:right;
+  margin: 10px 0px 15px 0px;
+  padding: 15px 30px ;
+  border: 1px solid darkgreen;
+  border-radius: 15px;
+  color: white;
+  background-color: darkgreen;
+  font-family: 'Fira Sans', serif;
+  font-size: 16px;
+  opacity: 0.95;
+  cursor:pointer;
+  transition: transform .7s;
+}
+
+/* changes text color when visited */
+input[type=submit]:visited {
+  color:#adf7bc 
+}
+
+/* adds transform and changes opacity of submit button when hovered on */
+input[type=submit]:hover {
+  opacity: 1;
+  transform: scale(1.2); 
+}
+
+.discussion {
+  font-size: 16px;
+}
